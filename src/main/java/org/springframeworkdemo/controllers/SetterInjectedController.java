@@ -1,9 +1,13 @@
-package guru.springframework.controllers;
+package org.springframeworkdemo.controllers;
 
-import guru.springframework.services.GreetingService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframeworkdemo.services.GreetingService;
 
+@Controller
 public class SetterInjectedController
 {
+    @Autowired
     public GreetingService greetingService;
 
     //Injecting through setter

@@ -1,6 +1,7 @@
-package guru.springframework.controllers;
+package org.springframeworkdemo.controllers;
 
-import guru.springframework.services.GreetingServiceImpl;
+import org.springframeworkdemo.controllers.ConstructorInjectedController;
+import org.springframeworkdemo.services.GreetingServiceImpl;
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;

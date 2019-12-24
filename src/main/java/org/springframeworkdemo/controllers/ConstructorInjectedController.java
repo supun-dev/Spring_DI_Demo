@@ -1,9 +1,13 @@
-package guru.springframework.controllers;
+package org.springframeworkdemo.controllers;
 
-import guru.springframework.services.GreetingService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframeworkdemo.services.GreetingService;
 
+@Controller
 public class ConstructorInjectedController
 {
+    @Autowired //In constructor injection, @Autowired annotation is not mandatory
     public GreetingService greetingService;
 
     //Injecting through constructor

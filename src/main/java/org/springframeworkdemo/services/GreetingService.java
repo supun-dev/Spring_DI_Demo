@@ -1,4 +1,4 @@
-package guru.springframework.services;
+package org.springframeworkdemo.services;
 
 /**
  *
