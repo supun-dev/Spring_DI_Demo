@@ -8,11 +8,12 @@ import org.springframeworkdemo.services.GreetingService;
 public class PropertyInjectedController
 {
     @Autowired //Tells Spring framework to inject this bean - This bean also needs to have an annotation like @Service,@Component,@Controller 
-    public GreetingService greetingService;
+    //If we use the concrete class object name ( starting with lower case ) Spring will assume its the correct bean.DO NOT RELY ON THIS.
+    public GreetingService greetingServiceImpl;
     
     //Injecting through property
     public String sayHello()
     {
-        return greetingService.sayGreeting();
+        return greetingServiceImpl.sayGreeting();
     }  
 }
