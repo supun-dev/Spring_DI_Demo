@@ -3,7 +3,7 @@ package org.springframeworkdemo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframeworkdemo.controllers.ConstructorInjectedController;
+import org.springframeworkdemo.controllers.*;
 import org.springframeworkdemo.controllers.MyController;
 import org.springframeworkdemo.controllers.PropertyInjectedController;
 import org.springframeworkdemo.controllers.SetterInjectedController;
