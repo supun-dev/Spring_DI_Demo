@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframeworkdemo.controllers.ConstructorInjectedController;
+import org.springframeworkdemo.controllers.MyController;
 import org.springframeworkdemo.controllers.PropertyInjectedController;
 import org.springframeworkdemo.controllers.SetterInjectedController;
 
@@ -15,8 +16,8 @@ public class DiDemoApplication
     {
         ApplicationContext ctx = SpringApplication.run(DiDemoApplication.class, args);
         
-//        MyController myController = (MyController) ctx.getBean("myController");
-//        myController.doGreeting();
+        MyController myController = (MyController) ctx.getBean("myController");
+        System.out.println(myController.doGreeting());
   
         System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
         System.out.println(ctx.getBean(SetterInjectedController.class).sayHello());
